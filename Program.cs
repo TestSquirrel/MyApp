@@ -26,10 +26,23 @@ namespace MyApp
             //if(version == "1.0.1")
             //{ }
 
-            using (var mgr = new UpdateManager("D:\\squirrel\\Project\\MyApp\\Releases"))
+            //using (var mgr = new UpdateManager("D:\\squirrel\\Project\\MyApp\\Releases"))
+            //{
+            //    await mgr.UpdateApp();
+            //}
+            try
             {
-                await mgr.UpdateApp();
+                using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/Sameer2810/TestSquirrel"))
+                {
+                    await mgr.Result.UpdateApp();
+                }
             }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+           
         }
     }
 }
