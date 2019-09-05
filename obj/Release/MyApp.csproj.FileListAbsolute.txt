@@ -38,7 +38,6 @@ D:\squirrel\Project\MyApp\bin\Release\Squirrel.dll
 D:\squirrel\Project\MyApp\bin\Release\NuGet.Squirrel.pdb
 D:\squirrel\Project\MyApp\bin\Release\Splat.pdb
 D:\squirrel\Project\MyApp\bin\Release\Squirrel.pdb
-D:\squirrel\Project\MyApp\obj\Release\MyApp.csprojAssemblyReference.cache
 D:\squirrel\Project\MyApp\obj\Release\MyApp.Form1.resources
 D:\squirrel\Project\MyApp\obj\Release\MyApp.csproj.GenerateResource.cache
 D:\squirrel\Project\MyApp\obj\Release\MyApp.csproj.CoreCompileInputs.cache
