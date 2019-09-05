@@ -30,6 +30,7 @@ namespace MyApp
             //{
             //    await mgr.UpdateApp();
             //}
+            //var
             try
             {
                 using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/Sameer2810/TestSquirrel"))
