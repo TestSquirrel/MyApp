@@ -1,0 +1,104 @@
+﻿2019-09-04 12:43:22> Program: Starting Squirrel Updater: 
+2019-09-04 12:43:37> Program: Starting Squirrel Updater: -install
+2019-09-04 12:43:37> Unhandled exception: Mono.Options.OptionException: Missing required value for option '-install'.
+   at Mono.Options.OptionValueCollection.AssertValid(Int32 index)
+   at Mono.Options.OptionSet.<>c__DisplayClass21_0.<Add>b__0(OptionValueCollection v)
+   at Mono.Options.OptionSet.ActionOption.OnParseComplete(OptionContext c)
+   at Mono.Options.Option.Invoke(OptionContext c)
+   at Mono.Options.OptionSet.Parse(IEnumerable`1 arguments)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+2019-09-04 12:43:56> Program: Starting Squirrel Updater: -Install
+2019-09-04 12:44:15> Program: Starting Squirrel Updater: -Update
+2019-09-04 12:45:35> Program: Starting Squirrel Updater: --releasify MyApp 1.0.0.nupkg
+2019-09-04 12:45:35> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-04 12:45:35> Unhandled exception: System.IO.FileNotFoundException: Could not find file 'MyApp'.
+File name: 'MyApp'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+2019-09-04 12:46:52> Program: Starting Squirrel Updater: --releasify MyApp 1.0.0.nupkg
+2019-09-04 12:46:52> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-04 12:46:52> Unhandled exception: System.IO.FileNotFoundException: Could not find file 'MyApp'.
+File name: 'MyApp'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+2019-09-04 12:47:27> Program: Starting Squirrel Updater: --releasify MyApp.1.0.0.nupkg
+2019-09-04 12:47:27> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-04 12:47:27> Program: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.0.nupkg
+2019-09-04 12:47:27> ReleasePackage: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.0.nupkg => D:\squirrel\MyApp\Releases\MyApp-1.0.0-full.nupkg
+2019-09-04 12:47:27> ReleasePackage: Extracting dependent packages: []
+2019-09-04 12:47:27> ReleasePackage: Removing unnecessary data
+2019-09-04 12:47:27> ReleasePackage: No release notes found in C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\MyApp.nuspec
+2019-09-04 12:47:28> Program: Building embedded zip file for Setup.exe
+2019-09-04 13:22:59> Program: Starting Squirrel Updater: --releasify MyApp.1.0.1.nupkg
+2019-09-04 13:22:59> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-04 13:22:59> Unhandled exception: System.IO.FileNotFoundException: Could not find file 'MyApp.1.0.1.nupkg'.
+File name: 'MyApp.1.0.1.nupkg'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalCopy(String sourceFileName, String destFileName, Boolean overwrite, Boolean checkHost)
+   at System.IO.File.Copy(String sourceFileName, String destFileName, Boolean overwrite)
+   at Squirrel.Update.Program.Releasify(String package, String targetDir, String packagesDir, String bootstrapperExe, String backgroundGif, String signingOpts, String baseUrl, String setupIcon, Boolean generateMsi, String frameworkVersion, Boolean generateDeltas)
+   at Squirrel.Update.Program.executeCommandLine(String[] args)
+   at Squirrel.Update.Program.main(String[] args)
+2019-09-04 13:23:39> Program: Starting Squirrel Updater: --releasify MyApp.1.0.1.nupkg
+2019-09-04 13:23:39> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-04 13:23:39> Program: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.1.nupkg
+2019-09-04 13:23:39> ReleasePackage: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.1.nupkg => D:\squirrel\MyApp\Releases\MyApp-1.0.1-full.nupkg
+2019-09-04 13:23:39> ReleasePackage: Extracting dependent packages: []
+2019-09-04 13:23:39> ReleasePackage: Removing unnecessary data
+2019-09-04 13:23:39> ReleasePackage: No release notes found in C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\MyApp.nuspec
+2019-09-04 13:23:39> DeltaPackageBuilder: Extracting .\Releases\MyApp-1.0.0-full.nupkg and D:\squirrel\MyApp\Releases\MyApp-1.0.1-full.nupkg into C:\Users\SSS\AppData\Local\SquirrelTemp\tempb
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Mono.Cecil.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: Delta patching C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\lib\net45\MyApp.exe => C:\Users\SSS\AppData\Local\SquirrelTemp\tempb\lib\net45\MyApp.exe
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\MyApp.exe.config hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: Delta patching C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\lib\net45\MyApp_ExecutionStub.exe => C:\Users\SSS\AppData\Local\SquirrelTemp\tempb\lib\net45\MyApp_ExecutionStub.exe
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\SharpCompress.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Splat.dll hasn't changed, writing dummy file
+2019-09-04 13:23:40> DeltaPackageBuilder: \lib\net45\Squirrel.dll hasn't changed, writing dummy file
+2019-09-04 13:23:41> Program: Building embedded zip file for Setup.exe
+2019-09-05 12:50:36> Program: Starting Squirrel Updater: --releasify MyApp.1.0.0.nupkg
+2019-09-05 12:50:36> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-05 12:50:36> Program: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.0.nupkg
+2019-09-05 12:50:36> ReleasePackage: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.0.nupkg => D:\squirrel\MyApp\Releases\MyApp-1.0.0-full.nupkg
+2019-09-05 12:50:36> ReleasePackage: Extracting dependent packages: []
+2019-09-05 12:50:36> ReleasePackage: Removing unnecessary data
+2019-09-05 12:50:36> ReleasePackage: No release notes found in C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\MyApp.nuspec
+2019-09-05 12:50:37> Program: Building embedded zip file for Setup.exe
+2019-09-05 12:56:54> Program: Starting Squirrel Updater: --releasify MyApp.1.0.1.nupkg
+2019-09-05 12:56:54> Program: Bootstrapper EXE found at:D:\squirrel\MyApp\packages\squirrel.windows.1.9.1\tools\Setup.exe
+2019-09-05 12:56:54> Program: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.1.nupkg
+2019-09-05 12:56:54> ReleasePackage: Creating release package: D:\squirrel\MyApp\Releases\MyApp.1.0.1.nupkg => D:\squirrel\MyApp\Releases\MyApp-1.0.1-full.nupkg
+2019-09-05 12:56:54> ReleasePackage: Extracting dependent packages: []
+2019-09-05 12:56:54> ReleasePackage: Removing unnecessary data
+2019-09-05 12:56:54> ReleasePackage: No release notes found in C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\MyApp.nuspec
+2019-09-05 12:56:54> DeltaPackageBuilder: Extracting .\Releases\MyApp-1.0.0-full.nupkg and D:\squirrel\MyApp\Releases\MyApp-1.0.1-full.nupkg into C:\Users\SSS\AppData\Local\SquirrelTemp\tempb
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.MsDelta.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\DeltaCompressionDotNet.PatchApi.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Mono.Cecil.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Mdb.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Pdb.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Mono.Cecil.Rocks.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: Delta patching C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\lib\net45\MyApp.exe => C:\Users\SSS\AppData\Local\SquirrelTemp\tempb\lib\net45\MyApp.exe
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\MyApp.exe.config hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: Delta patching C:\Users\SSS\AppData\Local\SquirrelTemp\tempa\lib\net45\MyApp_ExecutionStub.exe => C:\Users\SSS\AppData\Local\SquirrelTemp\tempb\lib\net45\MyApp_ExecutionStub.exe
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\NuGet.Squirrel.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\SharpCompress.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Splat.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> DeltaPackageBuilder: \lib\net45\Squirrel.dll hasn't changed, writing dummy file
+2019-09-05 12:56:55> Program: Building embedded zip file for Setup.exe
