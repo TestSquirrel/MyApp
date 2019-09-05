@@ -45,3 +45,4 @@ D:\squirrel\Project\MyApp\obj\Debug\MyApp.csproj.CoreCompileInputs.cache
 D:\squirrel\Project\MyApp\obj\Debug\MyApp.csproj.CopyComplete
 D:\squirrel\Project\MyApp\obj\Debug\MyApp.exe
 D:\squirrel\Project\MyApp\obj\Debug\MyApp.pdb
+D:\squirrel\Project\MyApp\obj\Debug\MyApp.csprojAssemblyReference.cache

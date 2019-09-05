@@ -22,6 +22,9 @@ namespace MyApp
         }
         static async Task Update()
         {
+            //System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+            //ServicePointManager.Expect100Continue = true;
+            //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             //var version = typeof(Program).Assembly.GetName().Version.ToString();
             //if(version == "1.0.1")
             //{ }
@@ -29,7 +32,7 @@ namespace MyApp
             //using (var mgr = new UpdateManager("D:\\squirrel\\Project\\MyApp\\Releases"))
             //{
             //    await mgr.UpdateApp();
-            //}
+            //} 
             try
             {
                 using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/Sameer2810/MyApp"))
