@@ -25,7 +25,8 @@ namespace MyApp
             //var version = typeof(Program).Assembly.GetName().Version.ToString();
             //if(version == "1.0.1")
             //{ }
-            using (var mgr = new UpdateManager("D:\\squirrel\\MyApp\\Releases"))
+
+            using (var mgr = new UpdateManager("D:\\squirrel\\Project\\MyApp\\Releases"))
             {
                 await mgr.UpdateApp();
             }
