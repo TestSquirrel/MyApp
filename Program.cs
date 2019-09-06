@@ -40,6 +40,10 @@ namespace MyApp
                 using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/TestSquirrel/MyApp", prerelease:true /*accessToken: "672e669504503a78358577280343cbdd2fb19dea"*/))
                 {
                     var update = await mgr.Result.CheckForUpdate();
+                    if(update.ReleasesToApply.Count() > 0)
+                    {
+                        await mgr.Result.UpdateApp();
+                    }
                 }
             }
             catch (Exception ex)
