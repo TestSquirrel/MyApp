@@ -33,13 +33,13 @@ namespace MyApp
             //using (var mgr = new UpdateManager("D:\\squirrel\\Project\\MyApp\\Releases"))
             //{
             //    await mgr.UpdateApp();
-            //} 
+            //} test
             //https://github.com/TestSquirrel/MyApp
             try  
             {
                 using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/TestSquirrel/MyApp", prerelease:true /*accessToken: "672e669504503a78358577280343cbdd2fb19dea"*/))
                 {
-                    var update =  await mgr.Result.UpdateApp();
+                    var update = await mgr.Result.CheckForUpdate();
                 }
             }
             catch (Exception ex)
