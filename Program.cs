@@ -23,8 +23,8 @@ namespace MyApp
         }
         static async Task Update()
         {
-            //System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
-            //ServicePointManager.Expect100Continue = true;
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
+            ServicePointManager.Expect100Continue = true;
             //ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             //var version = typeof(Program).Assembly.GetName().Version.ToString();
             //if(version == "1.0.1")
@@ -34,9 +34,10 @@ namespace MyApp
             //{
             //    await mgr.UpdateApp();
             //} 
-            try
+            //https://github.com/TestSquirrel/MyApp
+            try  
             {
-                using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/Sameer2810/MyApp"))
+                using (var mgr = UpdateManager.GitHubUpdateManager("https://github.com/TestSquirrel/MyApp", prerelease:true /*accessToken: "672e669504503a78358577280343cbdd2fb19dea"*/))
                 {
                     await mgr.Result.UpdateApp();
                 }
